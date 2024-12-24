@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Telegram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Описание</a></li>
+                    <li><a href="glossary.html">Словарь</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div id="user-info"></div>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Галерея Telegram</h2>
+            <div id="slider-wrapper">
+                <div id="slider">
+                    <div class="slide">
+                        <img src="images/slide1.jpg" alt="Telegram Interface">
+                        <p>Интерфейс Telegram</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.jpg" alt="Telegram Bots">
+                        <p>Боты Telegram</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.jpg" alt="Telegram Stickers">
+                        <p>Стикеры в Telegram</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide4.jpg" alt="Telegram Calls">
+                        <p>Видеозвонки в Telegram</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide5.jpg" alt="Telegram Cloud">
+                        <p>Облачное хранилище Telegram</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slider-controls">
+                <button onclick="prevSlide()">« Назад</button>
+                <button onclick="nextSlide()">Вперед »</button>
+            </div>
+            <p id="slide-number">1 из 5</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Контактные данные:</p>
+            <ul>
+                <li>Телефон: <a href="tel:+10000000000">+1 (000) 000-00-00</a></li>
+                <li><a href="#">Социальные сети</a></li>
+            </ul>
+            <p>&copy; 2024 Telegram. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

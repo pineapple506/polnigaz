@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация | Telegram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="auth-form">
+        <div class="container">
+            <h2>Авторизация</h2>
+            <form id="authForm">
+                <label for="login">Логин (4-10 символов):</label>
+                <input type="text" id="login" name="login" required pattern="^[а-яА-ЯёЁ0-9]{4,10}$"
+                    title="Логин должен содержать от 4 до 10 символов и только русские буквы и цифры!">
+                <div id="login-error" class="error"></div>
+
+                <label for="birthDate">Дата рождения:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <div id="birthDate-error" class="error"></div>
+
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="male" required> Мужской
+                <input type="radio" id="female" name="gender" value="female"> Женский
+                <div id="gender-error" class="error"></div>
+
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словарь | Telegram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Описание</a></li>
+                    <li><a href="glossary.html" class="active">Словарь</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div id="user-info"></div>
+        </div>
+    </header>
+
+    <section id="glossary">
+        <div class="container">
+            <h2>Словарь терминов Telegram</h2>
+
+            <input type="text" id="search" placeholder="Поиск термина" oninput="searchGlossary()">
+
+            <ul id="glossary-list">
+                <li class="term" onclick="showTerm('Telegram')">Telegram</li>
+                <li class="term" onclick="showTerm('Bot')">Bot</li>
+                <li class="term" onclick="showTerm('Channel')">Channel</li>
+                <li class="term" onclick="showTerm('Group')">Group</li>
+                <li class="term" onclick="showTerm('Secret Chat')">Secret Chat</li>
+                <li class="term" onclick="showTerm('Sticker')">Sticker</li>
+                <li class="term" onclick="showTerm('Message')">Message</li>
+                <li class="term" onclick="showTerm('Cloud Storage')">Cloud Storage</li>
+                <li class="term" onclick="showTerm('Encryption')">Encryption</li>
+                <li class="term" onclick="showTerm('Broadcast')">Broadcast</li>
+            </ul>
+
+            <div id="term-description" class="term-description">
+                <p>Выберите термин для просмотра его описания.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Контактные данные:</p>
+            <ul>
+                <li>Телефон: <a href="tel:+10000000000">+1 (000) 000-00-00</a></li>
+                <li><a href="#">Социальные сети</a></li>
+            </ul>
+            <p>&copy; 2024 Telegram. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест | Telegram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Описание</a></li>
+                    <li><a href="glossary.html">Словарь</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="test.html" class="active">Тест</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div id="user-info"></div>
+        </div>
+    </header>
+
+    <section id="test">
+        <div class="container">
+            <h2>Тест на знание Telegram</h2>
+
+            <form id="test-form">
+                <div class="question">
+                    <p>1. Когда был основан Telegram?</p>
+                    <input type="text" id="q1">
+                    <div id="q1-result"></div>
+                </div>
+
+                <div class="question">
+                    <p>2. Как называется официальный бот Telegram для создания каналов?</p>
+                    <input type="text" id="q2">
+                    <div id="q2-result"></div>
+                </div>
+
+                <div class="question">
+                    <p>3. Telegram использует ... шифрование?</p>
+                    <input type="radio" id="q3" name="q3" value="End-to-End"> End-to-End
+                    <input type="radio" id="q3" name="q3" value="AES"> AES
+                    <div id="q3-result"></div>
+                </div>
+
+                <div class="question">
+                    <p>4. Какой язык программирования использован для разработки Telegram?</p>
+                    <select id="q4">
+                        <option value="C++">C++</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                    </select>
+                    <div id="q4-result"></div>
+                </div>
+                <button type="submit">Проверить ответы</button>
+            </form>
+
+            <div id="result"></div>
+            <button id="restart-test" style="display: none;">Пройти тест заново</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Контактные данные:</p>
+            <ul>
+                <li>Телефон: <a href="tel:+10000000000">+1 (000) 000-00-00</a></li>
+                <li><a href="#">Социальные сети</a></li>
+            </ul>
+            <p>&copy; 2024 Telegram. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
